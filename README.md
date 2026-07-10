@@ -70,7 +70,7 @@ pkg install git
 git clone https://github.com/Arman-Tools/Arman-king-projects.git
 ```
 ```
-cd Camhack
+cd Arman-king-projects
 ```
 ```
 chmod +x start.sh
