@@ -1,6 +1,6 @@
-# EYESPY 🔍 (Previously Camhack)
+# H4SPY 🔍 (Previously Camhack)
 
-**EYESPY** is an educational tool created to demonstrate how camera access phishing attacks work in real-world scenarios.  
+**H4CKS** is an educational tool created to demonstrate how camera access phishing attacks work in real-world scenarios.  
 It is intended purely for **ethical hacking** and **cybersecurity awareness** purposes.
 
 > ⚠️ Warning: This tool is strictly for educational use. Any misuse may lead to legal consequences.
@@ -84,7 +84,7 @@ bash start.sh
 
 ## 📌 Contact Me  
 
-<a href="https://youtube.com/@firewallbreaker09">
+<a href="https://www.youtube.com/@SYSTEM_BREACHED-zip">
   <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
 </a>  
 <br>  
@@ -93,7 +93,3 @@ bash start.sh
   <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </a>  
 <br>  
-
-<a href="https://whatsapp.com/channel/0029VbAiqVMKLaHjg5J1Nm2F">
-  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Channel">
-</a>
