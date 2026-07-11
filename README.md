@@ -34,7 +34,7 @@ This tool requires a basic Termux setup and a few command-line steps.
 
 ## 🎬 YouTube Video
 
-[🔥 Watch Full Setup & Live Demo on YouTube](https://youtu.be/v20UHrx2lDc?si=8I2FZ5Khpg4nWVth)
+[🔥 Watch Full Setup & Live Demo on YouTube](https://youtu.be/qvknRZNOIFg?si=6uJLTU8tHB-VECAJ)
 
 ---
 
